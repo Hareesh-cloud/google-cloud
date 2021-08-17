@@ -45,7 +45,7 @@ def main():
                               host=host, db=db_name)
 
     with cnx.cursor() as cursor:
-        cursor.execute('YOUR QUERY GOES HERE;')
+        cursor.execute('SELECT 8 FROM EXTABLE;')
         result = cursor.fetchall()
         current_msg = result[0][0]
     cnx.close()
